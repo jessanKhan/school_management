@@ -51,8 +51,8 @@
 						Student
 					</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
-						<li><a href="student-addmision.html">Student Admission</a></li>
-						<li><a href="student-list.html">Student List</a></li>
+						<li><a href="student-addmision.aspx">Student Admission</a></li>
+						<li><a href="student-list.aspx">Student List</a></li>
 					</ul>
 				</li>
 				<li>
@@ -61,8 +61,8 @@
 						Teacher
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu1">
-						<li><a href="add-teacher.html">Add Teacher</a></li>
-						<li><a href="teacher-list.html">Teacher List</a></li>
+						<li><a href="add-teacher.aspx">Add Teacher</a></li>
+						<li><a href="teacher-list.aspx">Teacher List</a></li>
 					</ul>
 				</li>
 				<li>
@@ -71,36 +71,36 @@
 						Stuff
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu2">
-						<li><a href="add-employee.html">Add Stuff</a></li>
-						<li><a href="employee-list.html">Stuff List</a></li>
+						<li><a href="add-employee.aspx">Add Stuff</a></li>
+						<li><a href="employee-list.aspx">Stuff List</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="departments.html">
+					<a href="departments.aspx">
 						<i class="fa fa-th"></i>
 						Departments
 					</a>
 				</li>
 				<li>
-					<a href="classes.html">
+					<a href="classes.aspx">
 						<i class="fa fa-th-large"></i>
 						Classes
 					</a>
 				</li>
 				<li>
-					<a href="sections.html">
+					<a href="sections.aspx">
 						<i class="fa fa-square"></i>
 						Sections
 					</a>
 				</li>
 				<li>
-					<a href="groups.html">
+					<a href="groups.aspx">
 						<i class="fa fa-users"></i>
 						Groups
 					</a>
 				</li>
 				<li>
-					<a href="subjects.html">
+					<a href="subjects.aspx">
 						<i class="fa fa-clipboard"></i>
 						Subjects
 					</a>
@@ -111,10 +111,10 @@
 						Routine
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu10">
-						<li><a href="routin2.html">Student Routine</a></li>
-						<li><a href="routin2.html">Teacher Routine</a></li>
-						<li><a href="routin2.html">Employee Routine</a></li>
-						<li><a href="routin2.html">Add Routine</a></li>
+						<li><a href="routin2.aspx">Student Routine</a></li>
+						<li><a href="routin2.aspx">Teacher Routine</a></li>
+						<li><a href="routin2.aspx">Employee Routine</a></li>
+						<li><a href="routin2.aspx">Add Routine</a></li>
 					</ul>
 				</li>
 				<li>
@@ -123,14 +123,14 @@
 						Attendance
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu11">
-						<li><a href="attendence-student.html">Student Attendance</a></li>
-						<li><a href="attendence-teacher.html">Teacher Attendance</a></li>
-						<li><a href="attendence-employee.html">Employee Attendance</a></li>
+						<li><a href="attendence-student.aspx">Student Attendance</a></li>
+						<li><a href="attendence-teacher.aspx">Teacher Attendance</a></li>
+						<li><a href="attendence-employee.aspx">Employee Attendance</a></li>
 						<li><a href="attendence-stuffs"></a>Stuffs Attendance</li>
 					</ul>
 				</li>
 				<li>
-					<a href="exam.html">
+					<a href="exam.aspx">
 						<i class="fa fa-align-justify"></i>
 						Exam
 					</a>
@@ -139,7 +139,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="marks.html">
+					<a href="marks.aspx">
 						<i class="fa fa-calculator"></i>
 						Marks
 					</a>
@@ -154,7 +154,7 @@
 						Library
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu4">
-						<li><a href="library.html">Manage Books</a></li>
+						<li><a href="library.aspx">Manage Books</a></li>
 					</ul>
 				</li>
 				<li>
@@ -169,18 +169,18 @@
 						Transport
 					</a>
 					<ul class="collapse list-unstyled" id="pageSubmenu5">
-						<li><a href="transport.html">Add Transport</a></li>
-						<li><a href="transport-list.html">Transport List</a></li>
+						<li><a href="transport.aspx">Add Transport</a></li>
+						<li><a href="transport-list.aspx">Transport List</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="notice.html">
+					<a href="notice.aspx">
 						<i class="fa fa-clipboard"></i>
 						Notice
 					</a>
 				</li>
 				<li>
-					<a href="events.html">
+					<a href="events.aspx">
 						<i class="fa fa-calendar"></i>
 						Events
 					</a>
