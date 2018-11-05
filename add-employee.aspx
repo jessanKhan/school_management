@@ -96,7 +96,10 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
+
+                                            <asp:TextBox ID="stuff_id" runat="server" CssClass="" aria-describedby="basic-addon1" required="" ></asp:TextBox>
+
 											<label>Employee ID</label>
 										</div>
 									</div>
@@ -104,7 +107,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
+                                            <asp:TextBox ID="stuff_name" runat="server" CssClass="" aria-describedby="basic-addon1" required="" ></asp:TextBox>
 											<label>Employee Name</label>
 										</div>
 									</div>
@@ -113,7 +117,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
+                                            <asp:TextBox ID="stuff_phn" runat="server" CssClass="" aria-describedby="basic-addon1" required ></asp:TextBox>
 											<label>Contact Number</label>
 										</div>
 									</div>
@@ -122,7 +127,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
+                                            <asp:TextBox ID="stuff_email" runat="server" CssClass="" aria-describedby="basic-addon1" required ></asp:TextBox>
 											<label>Email Address</label>
 										</div>
 									</div>
@@ -131,7 +137,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<textarea required></textarea>
+											<asp:TextBox ID="present_add" TextMode="multiline" runat="server" CssClass="" aria-describedby="basic-addon1" required ></asp:TextBox>
+                                            <%--<textarea required></textarea>--%>
 											<label>Present Address</label>
 										</div>
 									</div>
@@ -140,7 +147,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<textarea required></textarea>
+                                            <asp:TextBox ID="TextBox1" TextMode="multiline" runat="server" CssClass="" aria-describedby="basic-addon1" required ></asp:TextBox>
+											<%--<textarea required></textarea>--%>
 											<label>Permanent Address</label>
 										</div>
 									</div>
@@ -149,12 +157,26 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+
+                                            <asp:DropDownList ID="DropDownList1" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Department</asp:ListItem>
+                                                <asp:ListItem Text="CSE"></asp:ListItem>
+                                                <asp:ListItem Text="EEE"></asp:ListItem>
+                                                <asp:ListItem Text="BBA"></asp:ListItem>
+                                                <asp:ListItem Text="TEX"></asp:ListItem>
+                                                <asp:ListItem Text="LAW"></asp:ListItem>
+                                                <asp:ListItem Text="Adminstration"></asp:ListItem>
+                                                <asp:ListItem Text="Cleaning"></asp:ListItem>
+                                                <asp:ListItem Text="MLSS"></asp:ListItem>
+                                                <asp:ListItem Text="Lab Assistant"></asp:ListItem>
+                                                <asp:ListItem Text="Watch Man"></asp:ListItem>
+                                            </asp:DropDownList>
+                                            <%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Department</option>
 											  <option>CSE</option>
 											  <option>BBA</option>
 											  <option>EEE</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
@@ -162,11 +184,19 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+                                            <asp:DropDownList ID="DropDownList2" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Gender</asp:ListItem>
+                                                <asp:ListItem Text="Male"></asp:ListItem>
+                                                <asp:ListItem Text="Female"></asp:ListItem>
+                                              
+                                            </asp:DropDownList>
+
+
+											<%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Gender</option>
 											  <option>Male</option>
 											  <option>Female</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
@@ -175,14 +205,24 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+                                            <asp:DropDownList ID="DropDownList3" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Religion</asp:ListItem>
+                                                <asp:ListItem Text="Muslim"></asp:ListItem>
+                                                <asp:ListItem Text="Sanatan"></asp:ListItem>
+                                                <asp:ListItem Text="Buddha"></asp:ListItem>
+                                                <asp:ListItem Text="Christian"></asp:ListItem>
+                                                <asp:ListItem Text="Others"></asp:ListItem>
+                                                
+                                            </asp:DropDownList>
+
+											<%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Religion</option>
 											  <option>Muslim</option>
 											  <option>Sanatan</option>
 											  <option>Buddha</option>
 											  <option>Christian</option>
 											  <option>Others</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
