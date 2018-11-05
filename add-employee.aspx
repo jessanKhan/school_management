@@ -230,7 +230,19 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+
+                                            <asp:DropDownList ID="DropDownList4" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Religion</asp:ListItem>
+                                                <asp:ListItem Text="Bangladeshi"></asp:ListItem>
+                                                <asp:ListItem Text="Indian"></asp:ListItem>
+                                                <asp:ListItem Text="Canadian"></asp:ListItem>
+                                                <asp:ListItem Text="Australian"></asp:ListItem>
+                                                <asp:ListItem Text="Japanese"></asp:ListItem>
+                                                <asp:ListItem Text="Chinese"></asp:ListItem>
+                                            </asp:DropDownList>
+
+
+											<%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Nationality</option>
 											  <option>Bangladeshi</option>
 											  <option>Indian</option>
@@ -238,7 +250,7 @@
 											  <option>Australian</option>
 											  <option>Japanese</option>
 											  <option>Chinese</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
