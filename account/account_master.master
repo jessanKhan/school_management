@@ -12,16 +12,16 @@
 
         <title></title>
          <!-- Bootstrap CSS CDN -->
-		 <link href="css/font-awesome.min.css" rel="stylesheet"/>
+		 <link href="../css/font-awesome.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-        <link rel="css/dataTables.bootstrap.min.css"/>
-        <link rel="css/jquery.dataTables.min.css"/>
-		<link href="css/dataTables.jqueryui.min.css" rel="stylesheet"/>
-			<link href="css/dataTables.semanticui.min.css" rel="stylesheet"/>
-			<link href="css/dataTables.foundation.min.css" rel="stylesheet"/>
+        <link rel="../css/dataTables.bootstrap.min.css"/>
+        <link rel="../css/jquery.dataTables.min.css"/>
+		<link href="../css/dataTables.jqueryui.min.css" rel="stylesheet"/>
+			<link href="../css/dataTables.semanticui.min.css" rel="stylesheet"/>
+			<link href="../css/dataTables.foundation.min.css" rel="stylesheet"/>
 			
-			<link href="css/dataTables.material.min.css" rel="stylesheet"/>
-			<link href="css/dataTables.uikit.min.css" rel="stylesheet"/>
+			<link href="../css/dataTables.material.min.css" rel="stylesheet"/>
+			<link href="../css/dataTables.uikit.min.css" rel="stylesheet"/>
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="../style.css"/>
     
@@ -212,6 +212,7 @@
         
         </asp:ContentPlaceHolder>
     </div>
+</div>
     </form>
 
      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
