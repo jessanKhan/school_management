@@ -232,7 +232,7 @@
 										<div class="input-group">
 
                                             <asp:DropDownList ID="DropDownList4" class="selectpicker show-tick form-control" runat="server">
-                                                <asp:ListItem Selected="True">Select Religion</asp:ListItem>
+                                                <asp:ListItem Selected="True">Select Nationality</asp:ListItem>
                                                 <asp:ListItem Text="Bangladeshi"></asp:ListItem>
                                                 <asp:ListItem Text="Indian"></asp:ListItem>
                                                 <asp:ListItem Text="Canadian"></asp:ListItem>
@@ -284,7 +284,8 @@
 							</div>
 							
 							<div class="button-cover">
-								<input type="submit" class="btn btn-save" value="submit">
+                                <asp:button runat="server" text="Submit" type="submit" class="btn btn-save" value="submit" />
+                                <%--<input type="submit" class="btn btn-save" value="submit">--%>
 							</div>
 						</form>	
 					</div>

@@ -98,7 +98,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+                                            <asp:TextBox ID="teacher_id" runat="server" CssClass="" aria-describedby="basic-addon1" required="" ></asp:TextBox>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
 											<label>Teacher ID</label>
 										</div>
 									</div>
@@ -106,7 +107,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+                                            <asp:TextBox ID="teacher_name" runat="server" CssClass="" aria-describedby="basic-addon1" required="" ></asp:TextBox>
+											<%--<input type="text" name="teacher_name" class="" aria-describedby="basic-addon1" required>--%>
 											<label>Teacher Name</label>
 										</div>
 									</div>
@@ -115,7 +117,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+                                            <asp:TextBox ID="teacher_cntct" runat="server" CssClass="" aria-describedby="basic-addon1" required="" ></asp:TextBox>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
 											<label>Contact Number</label>
 										</div>
 									</div>
@@ -124,7 +127,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>
+                                            <asp:TextBox ID="teacher_email" runat="server" CssClass="" aria-describedby="basic-addon1" required="" ></asp:TextBox>
+											<%--<input type="text" name="first_name" class="" aria-describedby="basic-addon1" required>--%>
 											<label>Email Address</label>
 										</div>
 									</div>
@@ -133,7 +137,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<textarea required></textarea>
+											<asp:TextBox ID="teacher_present_add" TextMode="multiline" runat="server" CssClass="" aria-describedby="basic-addon1" required ></asp:TextBox>
+                                            <%--<textarea required ></textarea>--%>
 											<label>Present Address</label>
 										</div>
 									</div>
@@ -142,7 +147,8 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<textarea required></textarea>
+                                            <asp:TextBox ID="teacher_perm_add" TextMode="multiline" runat="server" CssClass="" aria-describedby="basic-addon1" required ></asp:TextBox>
+											<%--<textarea required></textarea>--%>
 											<label>Permanent Address</label>
 										</div>
 									</div>
@@ -151,12 +157,14 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
-											  <option selected>Select Group</option>
-											  <option>Science</option>
-											  <option>Commerce</option>
-											  <option>Urce</option>
-											</select>
+											<asp:DropDownList ID="depertment" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Department</asp:ListItem>
+                                                <asp:ListItem Text="CSE"></asp:ListItem>
+                                                <asp:ListItem Text="EEE"></asp:ListItem>
+                                                <asp:ListItem Text="BBA"></asp:ListItem>
+                                                <asp:ListItem Text="TEX"></asp:ListItem>
+                                                <asp:ListItem Text="LAW"></asp:ListItem>
+                                            </asp:DropDownList>
 										</div>
 									</div>
 								</div>
@@ -164,12 +172,21 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+											<asp:DropDownList ID="sbjct" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Subject</asp:ListItem>
+                                                <asp:ListItem Text="English"></asp:ListItem>
+                                                <asp:ListItem Text="Physics"></asp:ListItem>
+                                                <asp:ListItem Text="Chemistry"></asp:ListItem>
+                                                <asp:ListItem Text="Bangla"></asp:ListItem>
+                                                <asp:ListItem Text="Mathematics"></asp:ListItem>
+                                            </asp:DropDownList>
+                                            
+                                            <%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Subject</option>
 											  <option>English</option>
 											  <option>Physics</option>
 											  <option>Chemistry</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
@@ -177,7 +194,20 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+                                            <asp:DropDownList ID="blood_group" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Bloodgroup</asp:ListItem>
+                                                <asp:ListItem Text="A+"></asp:ListItem>
+                                                <asp:ListItem Text="B+"></asp:ListItem>
+                                                <asp:ListItem Text="A-"></asp:ListItem>
+                                                <asp:ListItem Text="B-"></asp:ListItem>
+                                                <asp:ListItem Text="O+"></asp:ListItem>
+                                                <asp:ListItem Text="O-"></asp:ListItem>
+                                                <asp:ListItem Text="AB+"></asp:ListItem>
+                                                <asp:ListItem Text="AB-"></asp:ListItem>
+                                            </asp:DropDownList>
+
+
+											<%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Blood Group</option>
 											  <option>A+</option>
 											  <option>B+</option>
@@ -187,7 +217,7 @@
 											  <option>O-</option>
 											  <option>AB+</option>
 											  <option>AB-</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
@@ -195,14 +225,23 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+                                             <asp:DropDownList ID="religion" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Religion</asp:ListItem>
+                                                <asp:ListItem Text="Muslim"></asp:ListItem>
+                                                <asp:ListItem Text="Sanatan"></asp:ListItem>
+                                                <asp:ListItem Text="Buddha"></asp:ListItem>
+                                                <asp:ListItem Text="Christian"></asp:ListItem>
+                                                <asp:ListItem Text="Others"></asp:ListItem>
+                                            </asp:DropDownList>
+
+											<%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Religion</option>
 											  <option>Muslim</option>
 											  <option>Sanatan</option>
 											  <option>Buddha</option>
 											  <option>Christian</option>
 											  <option>Others</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
@@ -210,7 +249,17 @@
 								<div class="col-md-6">
 									<div class="form-tools-cover">
 										<div class="input-group">
-											<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
+											
+                                              <asp:DropDownList ID="nationality" class="selectpicker show-tick form-control" runat="server">
+                                                <asp:ListItem Selected="True">Select Nationality</asp:ListItem>
+                                                <asp:ListItem Text="Bangladeshi"></asp:ListItem>
+                                                <asp:ListItem Text="Indian"></asp:ListItem>
+                                                <asp:ListItem Text="Canadian"></asp:ListItem>
+                                                <asp:ListItem Text="Australian"></asp:ListItem>
+                                                <asp:ListItem Text="Japanese"></asp:ListItem>
+                                            </asp:DropDownList>
+                                            
+                                            <%--<select id="basic" class="selectpicker show-tick form-control" data-live-search="true">
 											  <option selected>Select Nationality</option>
 											  <option>Bangladeshi</option>
 											  <option>Indian</option>
@@ -218,7 +267,7 @@
 											  <option>Australian</option>
 											  <option>Japanese</option>
 											  <option>Chinese</option>
-											</select>
+											</select>--%>
 										</div>
 									</div>
 								</div>
